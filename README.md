@@ -1,15 +1,17 @@
 # Bimodal SegNet: Instance Segmentation Fusing Events and RGB Frames for Robotic Grasping
 
 # Cite the article:
-@misc{kachole2023bimodal, 
-      title={Bimodal SegNet: Instance Segmentation Fusing Events and RGB Frames for Robotic Grasping}, 
-      author={Sanket Kachole and Xiaoqian Huang and Fariborz Baghaei Naeini and Rajkumar Muthusamy and Dimitrios Makris and Yahya Zweiri},
-      year={2023},
-      eprint={2303.11228},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
 
+```bibtex
+@misc{kachole2023bimodal,
+    title     = {Bimodal SegNet: Instance Segmentation Fusing Events and RGB Frames for Robotic Grasping},
+    author    = {Sanket Kachole and Xiaoqian Huang and Fariborz Baghaei Naeini and Rajkumar Muthusamy and Dimitrios Makris and Yahya Zweiri},
+    year      = {2023},
+    eprint    = {2303.11228},
+    archivePrefix = {arXiv},
+    primaryClass  = {cs.CV},
+}
+```
 # Dataset:
 [Download dataset link](https://springernature.figshare.com/collections/A_Neuromorphic_Dataset_for_Object_Segmentation_in_Indoor_Cluttered_Environment/6432548/1), 
 [ESD1 dataset](https://springernature.figshare.com/articles/dataset/ESD-2/22109120?backTo=%2Fcollections%2FA_Neuromorphic_Dataset_for_Object_Segmentation_in_Indoor_Cluttered_Environment%2F6432548&file=39281702), 
