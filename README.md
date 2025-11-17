@@ -1,6 +1,41 @@
-# Bimodal SegNet: Instance Segmentation Fusing Events and RGB Frames for Robotic Grasping
+# 🚀 **Bimodal SegNet: Instance Segmentation Fusing Events and RGB Frames for Robotic Grasping**
 
-# Cite the article:
+Bimodal SegNet is a dual-encoder deep learning architecture designed to fuse **event-based signals** and **RGB frame data** for robust instance segmentation in robotic grasping tasks under challenging visual conditions.
+
+Object segmentation in dynamic environments is often degraded by **occlusion**, **low illumination**, **motion blur**, and **scale variation**.
+Our architecture addresses these limitations using:
+
+* **Two specialized encoders** (Event + RGB)
+* **Spatial Pyramid Pooling with Atrous Convolutions**
+* **Multi-scale context fusion**
+* **A decoder producing sharp object boundaries**
+
+Evaluations on the **Event-based Segmentation Dataset (ESD)** demonstrate **6–10% improvement** over state-of-the-art methods across five degradation conditions: occlusion, blur, brightness, trajectory variation, and scale variation.
+
+---
+
+## 📐 **Framework Overview**
+
+<div align="center">
+  <img width="600" alt="Overview Architecture" src="https://github.com/sanket0707/Bimodal-SegNet/assets/43345233/4337f390-d334-4b7c-9ec8-7a2f37b9ca1b">
+</div>
+
+---
+
+## 📦 **Dataset**
+
+The method is evaluated on the **Event-based Segmentation (ESD) Dataset**, publicly available on Figshare:
+
+🔗 **[Download Full Dataset Collection](https://springernature.figshare.com/collections/A_Neuromorphic_Dataset_for_Object_Segmentation_in_Indoor_Cluttered_Environment/6432548/1)**
+
+1. **[ESD1 Dataset](https://springernature.figshare.com/articles/dataset/ESD-2/22109120?backTo=%2Fcollections%2FA_Neuromorphic_Dataset_for_Object_Segmentation_in_Indoor_Cluttered_Environment%2F6432548&file=39281702)**
+2. **[ESD2 Dataset](https://springernature.figshare.com/articles/dataset/ESD-1/22109117?backTo=%2Fcollections%2FA_Neuromorphic_Dataset_for_Object_Segmentation_in_Indoor_Cluttered_Environment%2F6432548&file=39281594)**
+
+---
+
+## 📚 **Cite This Article**
+
+If you use this work in your research, please cite:
 
 ```bibtex
 @misc{kachole2023bimodal,
@@ -13,26 +48,27 @@
 }
 ```
 
-# Dataset:
-[Download dataset link](https://springernature.figshare.com/collections/A_Neuromorphic_Dataset_for_Object_Segmentation_in_Indoor_Cluttered_Environment/6432548/1)
-1. [ESD1 dataset](https://springernature.figshare.com/articles/dataset/ESD-2/22109120?backTo=%2Fcollections%2FA_Neuromorphic_Dataset_for_Object_Segmentation_in_Indoor_Cluttered_Environment%2F6432548&file=39281702)
-2. [ESD2 dataset](https://springernature.figshare.com/articles/dataset/ESD-1/22109117?backTo=%2Fcollections%2FA_Neuromorphic_Dataset_for_Object_Segmentation_in_Indoor_Cluttered_Environment%2F6432548&file=39281594)
+---
 
-# Framework of Bimodal SegNet
+## 💻 **Code Implementation**
 
-Object segmentation for robotic grasping under dynamic conditions often faces challenges such as occlusion, low light conditions, motion blur and object size variance. To address these challenges, we propose a Deep Learning network that fuses two types of visual signals, event-based data and RGB  frame data. The proposed Bimodal SegNet network has two distinct encoders,  one for each signal input and a spatial pyramidal pooling with atrous convolutions. Encoders capture rich contextual information by pooling the concatenated features at different resolutions while the decoder obtains sharp object boundaries. The evaluation of the proposed method undertakes five unique image degradation challenges including occlusion, blur, brightness, trajectory and scale variance on the Event-based Segmentation (ESD) Dataset. The evaluation results show a 6-10\% segmentation accuracy improvement over state-of-the-art methods in terms of mean intersection over the union and pixel accuracy.
+This repository contains the full implementation of **Bimodal SegNet**, including:
 
- <img width="516" alt="Overview Architecture" src="https://github.com/sanket0707/Bimodal-SegNet/assets/43345233/4337f390-d334-4b7c-9ec8-7a2f37b9ca1b">
+* Event encoder
+* RGB encoder
+* Spatial Pyramid Pooling + Atrous Convolutions
+* Dual-stream fusion
+* Segmentation decoder
+* Training & evaluation scripts
 
-# Code Implementation
+---
 
-# Requirements:
-#####  Python 3.7 
-##### Tensorflow 2.11.0
+## 🛠 **Requirements**
 
-
-
-
-
-
-
+* Python **3.7**
+* TensorFlow **2.11.0**
+* NumPy
+* SciPy
+* OpenCV
+* Matplotlib
+  (Install instructions can be added if you want.)
